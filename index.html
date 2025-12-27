@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compras da semana</title>
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <span style="position: relative; top: -8px; right: -3px; color: #ca3884"
+          >.</span
+        >
+        <img src="img/logo.svg" alt="" />
+        <span style="position: relative; top: -1px; left: -3px; color: #ca3884"
+          >.</span
+        >
+
+        <span class="title">quicklist</span>
+      </div>
+
+      <div class="title-bar">
+        <div>
+          <button type="submit" id="btn-back"><- Voltar</button>
+        </div>
+
+        <span class="title">Compras da semana</span>
+      </div>
+
+      <form>
+        <input
+          type="text"
+          class="label"
+          placeholder="Adicione um novo item"
+          id="input-main"
+        />
+        <button name="button" type="submit" class="label" id="btn-add">
+          Adicionar item
+        </button>
+      </form>
+
+      <ul>
+        <li>
+          <input type="checkbox" class="btn-select" alt="selecionar" />
+          Pão de forma
+          <button type="button" class="btn-trash" alt="remover">
+            <img src="img/trash.svg" alt="" />
+          </button>
+        </li>
+        <li>
+          <input type="checkbox" class="btn-select" alt="selecionar" />
+          Café preto
+          <button type="button" class="btn-trash" alt="remover">
+            <img src="img/trash.svg" alt="" />
+          </button>
+        </li>
+        <li>
+          <input type="checkbox" class="btn-select" alt="selecionar" />
+          Suco de laranja
+          <button type="button" class="btn-trash" alt="remover">
+            <img src="img/trash.svg" alt="" />
+          </button>
+        </li>
+        <li>
+          <input type="checkbox" class="btn-select" alt="selecionar" />
+          Bolacha
+          <button type="button" class="btn-trash" alt="remover">
+            <img src="img/trash.svg" alt="" />
+          </button>
+        </li>
+      </ul>
+
+      <div class="alert-remove">
+        <img
+          src="img/alert.svg"
+          alt="Ícone de alerta"
+          style="right: -2px; margin-right: 2px"
+        />
+        <span style="position: relative; top: -1px"
+          >O item foi removido da lista</span
+        >
+        <button type="button" id="remove-alert">
+          <img src="img/remove.svg" alt="" />
+        </button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
